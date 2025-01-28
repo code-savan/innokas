@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import Footer from '@/components/footer';
+import Image from 'next/image';
 
 export default function Careers() {
   return (
@@ -13,7 +14,7 @@ export default function Careers() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <div className="relative h-full">
-            <img
+            <Image
               src="/career.jpg"
               alt="Team collaboration"
               className="object-cover w-full h-full"

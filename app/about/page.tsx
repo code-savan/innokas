@@ -4,6 +4,7 @@ import Footer from '@/components/footer';
 import TeamCard from "@/components/TeamCard"
 import FeatureCard from "@/components/FeatureCard"
 import { ArrowRight, Award, ShieldCheck, PiggyBank, Truck, Headphones, Star } from "lucide-react"
+import Image from 'next/image';
 
 export default function About() {
     const teamMembers = [
@@ -49,7 +50,7 @@ export default function About() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <div className="relative h-full">
-            <img
+            <Image
               src="/abouthero.jpg"
               alt="Agricultural landscape"
               className="object-cover w-full h-full"
@@ -77,7 +78,7 @@ export default function About() {
             <div className="slide-in">
               <h2 className="text-3xl mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-8">
-                To revolutionize Nigeria's agricultural sector by providing high-quality products
+                To revolutionize Nigeria&apos;s agricultural sector by providing high-quality products
                 and innovative solutions that enhance food security and economic growth while
                 maintaining the highest standards of sustainability and customer satisfaction.
               </p>

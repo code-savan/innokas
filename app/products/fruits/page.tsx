@@ -19,6 +19,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import Footer from '@/components/footer';
 import Autoplay from 'embla-carousel-autoplay';
+import Image from 'next/image';
 
 export default function Fruits() {
   const fruitCategories = [
@@ -100,7 +101,7 @@ export default function Fruits() {
               <CarouselItem key={index} className="relative h-screen">
                 <div className="absolute inset-0">
                   <div className="relative h-full">
-                    <img
+                    <Image
                       src={category.image}
                       alt={category.title}
                       className="object-cover w-full h-full"
@@ -176,7 +177,7 @@ export default function Fruits() {
               <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg p-2">
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-4">
-                    <img
+                    <Image
                       src={category.image}
                       alt={category.title}
                       className="w-16 h-16 rounded-full object-cover"

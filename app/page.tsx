@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 import Navigation from '@/components/ui/navigation';
 import { Button } from '@/components/ui/button';
@@ -63,7 +64,7 @@ export default function Home() {
               <CarouselItem key={index} className="relative h-screen">
                 <div className="absolute inset-0">
                   <div className="relative h-full">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={`Slide ${index + 1}`}
                       className="object-cover w-full h-full"
@@ -129,7 +130,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="relative h-[400px] slide-in">
-            <img
+            <Image
               src="/about.jpeg"
               alt="Warehouse operations"
               className="rounded-lg object-cover w-full h-full"
@@ -191,7 +192,7 @@ export default function Home() {
       {/* Careers Section */}
       <section className="relative py-20">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
             alt="Team collaboration"
             className="object-cover w-full h-full"
@@ -238,7 +239,7 @@ export default function Home() {
             ].map((post, index) => (
               <Card key={index} className="overflow-hidden slide-in">
                 <div className="h-48 relative">
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
                     className="object-cover w-full h-full"

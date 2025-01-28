@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import Footer from '@/components/footer';
+import Image from 'next/image';
 
 export default function Blog() {
   return (
@@ -13,7 +14,7 @@ export default function Blog() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <div className="relative h-full">
-            <img
+            <Image
               src="/blog.jpg"
               alt="Agricultural innovation"
               className="object-cover w-full h-full"
@@ -60,7 +61,7 @@ export default function Blog() {
             ].map((post, index) => (
               <Card key={index} className="overflow-hidden slide-in">
                 <div className="h-48 relative">
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
                     className="object-cover w-full h-full"

@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import Footer from '@/components/footer';
+import Image from 'next/image';
 
 export default function Contact() {
   return (
@@ -13,7 +14,7 @@ export default function Contact() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <div className="relative h-full">
-            <img
+            <Image
               src="/contact.jpg"
               alt="Contact us"
               className="object-cover w-full h-full"
@@ -28,7 +29,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              We're here to answer any questions you may have
+              We&apos;re here to answer any questions you may have
             </p>
           </div>
         </div>
