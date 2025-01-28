@@ -15,7 +15,7 @@ export default function Farming() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <div className="relative h-full">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070"
               className="object-cover w-full h-full"
               alt="Farming Operations"

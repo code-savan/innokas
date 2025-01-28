@@ -2,17 +2,18 @@ import Navigation from '@/components/ui/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Products() {
   return (
     <main className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <div className="relative h-full">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1615811361523-6bd03d7e0b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
               alt="Product showcase"
               className="object-cover w-full h-full"
@@ -20,7 +21,7 @@ export default function Products() {
             <div className="absolute inset-0 bg-black bg-opacity-50" />
           </div>
         </div>
-        
+
         <div className="relative h-full flex items-center justify-center text-white px-4">
           <div className="max-w-4xl mx-auto text-center slide-in">
             <h1 className="text-4xl md:text-6xl mb-6">
@@ -56,7 +57,7 @@ export default function Products() {
             ].map((category, index) => (
               <Card key={index} className="overflow-hidden slide-in">
                 <div className="h-48 relative">
-                  <img
+                  <Image
                     src={category.image}
                     alt={category.title}
                     className="object-cover w-full h-full"

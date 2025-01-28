@@ -15,7 +15,7 @@ export default function FrozenFoods() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <div className="relative h-full">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=2070"
               className="object-cover w-full h-full"
               alt="Frozen Foods"
