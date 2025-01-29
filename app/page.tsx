@@ -25,9 +25,9 @@ export default function Home() {
       description: "Delivering excellence in agricultural products across Nigeria and beyond",
     },
     {
-      image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=2070",
+      image: "https://images.unsplash.com/photo-1498654200943-1088dd4438ae?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Premium Quality Frozen Foods",
-      description: "From farm-fresh vegetables to premium meats, maintaining nutritional value and taste",
+      description: "From farm-fresh vegetables to premium fish, maintaining nutritional value and taste",
     },
     {
       image: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=2070",
