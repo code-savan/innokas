@@ -19,6 +19,7 @@ export default function Farming() {
               src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070"
               className="object-cover w-full h-full"
               alt="Farming Operations"
+              fill
             />
             <div className="absolute inset-0 bg-black bg-opacity-50" />
           </div>

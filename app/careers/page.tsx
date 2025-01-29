@@ -18,6 +18,7 @@ export default function Careers() {
               src="/career.jpg"
               alt="Team collaboration"
               className="object-cover w-full h-full"
+              fill
             />
             <div className="absolute inset-0 bg-black bg-opacity-50" />
           </div>

@@ -17,6 +17,7 @@ export default function Products() {
               src="https://images.unsplash.com/photo-1615811361523-6bd03d7e0b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
               alt="Product showcase"
               className="object-cover w-full h-full"
+              fill
             />
             <div className="absolute inset-0 bg-black bg-opacity-50" />
           </div>
@@ -61,6 +62,7 @@ export default function Products() {
                     src={category.image}
                     alt={category.title}
                     className="object-cover w-full h-full"
+                    fill
                   />
                 </div>
                 <CardHeader>

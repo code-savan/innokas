@@ -18,6 +18,7 @@ export default function Contact() {
               src="/contact.jpg"
               alt="Contact us"
               className="object-cover w-full h-full"
+              fill
             />
             <div className="absolute inset-0 bg-black bg-opacity-50" />
           </div>

@@ -18,6 +18,7 @@ export default function Blog() {
               src="/blog.jpg"
               alt="Agricultural innovation"
               className="object-cover w-full h-full"
+              fill
             />
             <div className="absolute inset-0 bg-black bg-opacity-50" />
           </div>
@@ -65,6 +66,7 @@ export default function Blog() {
                     src={post.image}
                     alt={post.title}
                     className="object-cover w-full h-full"
+                    fill
                   />
                 </div>
                 <CardHeader>

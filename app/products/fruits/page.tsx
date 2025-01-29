@@ -91,7 +91,7 @@ export default function Fruits() {
           }}
           plugins={[
             Autoplay({
-              delay: 3000,
+              delay: 4000,
             }),
           ]}
           className="w-full h-full"
@@ -105,6 +105,7 @@ export default function Fruits() {
                       src={category.image}
                       alt={category.title}
                       className="object-cover w-full h-full"
+                      fill
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50" />
                   </div>
@@ -181,6 +182,7 @@ export default function Fruits() {
                       src={category.image}
                       alt={category.title}
                       className="w-16 h-16 rounded-full object-cover"
+                      fill
                     />
                     <span className="text-xl font-semibold">{category.title}</span>
                   </div>

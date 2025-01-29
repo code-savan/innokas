@@ -54,7 +54,7 @@ export default function Home() {
           }}
           plugins={[
             Autoplay({
-              delay: 3000,
+              delay: 4000,
             }),
           ]}
           className="min-w-full h-full overflow-hidden"
@@ -68,6 +68,7 @@ export default function Home() {
                       src={slide.image}
                       alt={`Slide ${index + 1}`}
                       className="object-cover w-full h-full"
+                      fill
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50" />
                   </div>
@@ -81,11 +82,11 @@ export default function Home() {
                     <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-up">
                       {slide.description}
                     </p>
-                    <div className='space-x-2 space-y-2 animate-fade-up'>
+                    <div className='md:space-x-2 space-y-2 animate-fade-up'>
                         <Link href={"/products/fruits"}>
                       <Button
                         size="lg"
-                        className="bg-primary hover:bg-primary/90 text-white"
+                        className="bg-primary hover:bg-primary/90 text-white mb-2 md:mb-0"
                       >
                         Explore Our Products <ArrowRight className="ml-2" size={16} />
                       </Button>
@@ -94,7 +95,7 @@ export default function Home() {
 
                       <Button
                         size="lg"
-                        className="bg-transparent hover:bg-white/90 text-white hover:text-black/90 border"
+                        className="bg-transparent hover:bg-white/90 text-white hover:text-black/90 border w-[260px] md:w-fit"
                         >
                         Reach Out <ArrowRight className="ml-2" size={16} />
                       </Button>
@@ -134,6 +135,7 @@ export default function Home() {
               src="/about.jpeg"
               alt="Warehouse operations"
               className="rounded-lg object-cover w-full h-full"
+              fill
             />
           </div>
         </div>
@@ -196,6 +198,7 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
             alt="Team collaboration"
             className="object-cover w-full h-full"
+            fill
           />
           <div className="absolute inset-0 bg-black bg-opacity-60" />
         </div>
@@ -243,6 +246,7 @@ export default function Home() {
                     src={post.image}
                     alt={post.title}
                     className="object-cover w-full h-full"
+                    fill
                   />
                 </div>
                 <CardHeader>
