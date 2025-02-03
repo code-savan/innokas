@@ -16,11 +16,11 @@ import React from 'react'
         <div>
           <h4 className="font-bold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-white/80">
-            <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Our Products</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Careers</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">News and Update</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
+            <li><a href="/about" className="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="/products/fruits" className="text-gray-400 hover:text-white">Our Products</a></li>
+            <li><a href="/careers" className="text-gray-400 hover:text-white">Careers</a></li>
+            <li><a href="/blog" className="text-gray-400 hover:text-white">News and Update</a></li>
+            <li><a href="/contact" className="text-gray-400 hover:text-white">Contact</a></li>
           </ul>
         </div>
         <div>

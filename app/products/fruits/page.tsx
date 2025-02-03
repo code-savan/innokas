@@ -68,7 +68,7 @@ export default function Fruits() {
       ]
     },
     {
-      image: "https://images.unsplash.com/photo-1621371205896-3082fa811d54?q=80&w=2070",
+      image: "https://images.unsplash.com/photo-1518834903818-7d1557333fda?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Plums",
       varieties: [
         "Angeleno",
@@ -94,12 +94,12 @@ export default function Fruits() {
               delay: 4000,
             }),
           ]}
-          className="w-full h-full"
+          className="min-w-full h-full overflow-hidden"
         >
           <CarouselContent>
             {fruitCategories.map((category, index) => (
               <CarouselItem key={index} className="relative h-screen">
-                <div className="absolute inset-0">
+                <div className="absolute inset-0 ">
                   <div className="relative h-full">
                     <Image
                       src={category.image}
@@ -179,7 +179,7 @@ export default function Fruits() {
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-center gap-4">
                     <Image
-                      src={category.image}
+                      src={"/"}
                       alt={category.title}
                       className="w-16 h-16 rounded-full object-cover"
                       fill
