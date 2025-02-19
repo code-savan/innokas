@@ -16,7 +16,7 @@ export default function FrozenFoods() {
         <div className="absolute inset-0">
           <div className="relative h-full">
             <Image
-              src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=2070"
+              src="https://images.unsplash.com/photo-1498654200943-1088dd4438ae?q=80&w=2940"
               className="object-cover w-full h-full"
               alt="Frozen Foods"
               fill
