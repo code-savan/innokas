@@ -33,7 +33,7 @@ export default function FrozenFoods() {
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
               From farm-fresh vegetables to premium meats, our frozen foods maintain their nutritional value and taste
             </p>
-            <div className='space-x-2 space-y-2'>
+            {/* <div className='space-x-2 space-y-2'>
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-white"
@@ -46,7 +46,7 @@ export default function FrozenFoods() {
               >
                 Contact Sales <ArrowRight className="ml-2" size={16} />
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

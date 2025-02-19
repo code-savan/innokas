@@ -36,7 +36,7 @@ export default function Home() {
       description: "Experience the sweetness of nature with our carefully selected fresh fruits",
     },
     {
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070",
+      image: "/logistics.jpeg",
       title: "Efficient and Reliable Logistics Solutions",
       description: "Seamless transportation and storage solutions for your agricultural products",
     }
@@ -164,9 +164,9 @@ export default function Home() {
                 route: "/products/fruits"
               },
               {
-                title: "Agriculture",
+                title: "Innokas Rice",
                 icon: <Leaf className="h-8 w-8 text-primary" />,
-                description: "Agricultural products and farming solutions for modern agriculture.",
+                description: "Premium quality rice for all your needs",
                 route: "/products/farming"
               },
               {

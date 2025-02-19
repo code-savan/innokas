@@ -33,8 +33,8 @@ export default function Navigation() {
   const links = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
-    { href: '/careers', label: 'Careers' },
-    { href: '/blog', label: 'News and Updates' },
+    // { href: '/careers', label: 'Careers' },
+    // { href: '/blog', label: 'News and Updates' },
     // { href: '/contact', label: 'Contact' }
   ];
 
@@ -78,6 +78,20 @@ export default function Navigation() {
             </DropdownMenu>
 
 
+            <Link
+                key={"/careers"}
+                href={"/careers"}
+                className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
+              >
+                Careers
+              </Link>
+            <Link
+                key={"/blog"}
+                href={"/blog"}
+                className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
+              >
+                News and Updates
+              </Link>
             <Link
                 key={"/contact"}
                 href={"/contact"}
