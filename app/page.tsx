@@ -24,33 +24,37 @@ export default function Home() {
       image: "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2074",
       title: "Your trusted partner for high-quality fruits, frozen foods, and agricultural products",
       description: "Delivering excellence in agricultural products across Nigeria and beyond",
+      link: "/products"
     },
     {
       image: "https://images.unsplash.com/photo-1498654200943-1088dd4438ae?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Premium Quality Frozen Foods",
       description: "From farm-fresh vegetables to premium fish, maintaining nutritional value and taste",
+      link: "/products/frozen-foods"
     },
     {
       image: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=2070",
       title: "Fresh, Natural, and Delicious Fruits",
       description: "Experience the sweetness of nature with our carefully selected fresh fruits",
+      link: "/products/fruits"
     },
     {
       image: "/logistics.jpeg",
       title: "Efficient and Reliable Logistics Solutions",
       description: "Seamless transportation and storage solutions for your agricultural products",
+      link: "/products/logistics"
     }
   ];
 
   return (
-    <main className="min-h-screen w-full flex items-center justify-center">
-      {/* <Navigation /> */}
+    <main className="min-h-screen w-full">
+      <Navigation />
       {/* <p>Pay Your balance innokas</p> */}
-      <PaymentWarning />
+      {/* <PaymentWarning /> */}
 
 
       {/* Hero Section with Carousel */}
-      {/* <section className="relative h-screen">
+      <section className="relative h-screen">
         <Carousel
           opts={{
             align: "start",
@@ -87,7 +91,7 @@ export default function Home() {
                       {slide.description}
                     </p>
                     <div className='md:space-x-2 space-y-2 animate-fade-up'>
-                        <Link href={"/products/fruits"}>
+                        <Link href={slide.link}>
                       <Button
                         size="lg"
                         className="bg-primary hover:bg-primary/90 text-white mb-2 md:mb-0"
@@ -115,10 +119,10 @@ export default function Home() {
             <CarouselNext className="bg-white/30 hover:bg-white/50 text-white" />
           </div>
         </Carousel>
-      </section> */}
+      </section>
 
       {/* Who We Are Section */}
-      {/* <section className="py-20 px-4">
+      <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="slide-in">
             <h2 className="text-3xl md:text-4xl mb-6">Who We Are</h2>
@@ -143,10 +147,10 @@ export default function Home() {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Product Lines Section */}
-      {/* <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl text-center mb-12">Our Product Lines</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -164,9 +168,9 @@ export default function Home() {
                 route: "/products/fruits"
               },
               {
-                title: "Innokas Rice",
+                title: "Innokas Agriculture",
                 icon: <Leaf className="h-8 w-8 text-primary" />,
-                description: "Premium quality rice for all your needs",
+                description: "Premium quality food products for all your needs",
                 route: "/products/farming"
               },
               {
@@ -193,10 +197,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Careers Section */}
-      {/* <section className="relative py-20">
+      <section className="relative py-20">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
@@ -220,10 +224,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* News and Blog Section */}
-      {/* <section className="py-20 px-4">
+      <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl text-center mb-12">Latest News</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -274,10 +278,10 @@ export default function Home() {
           </Link>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Contact Section */}
-      {/* <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="slide-in">
@@ -324,10 +328,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
