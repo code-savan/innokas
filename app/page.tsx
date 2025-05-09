@@ -203,9 +203,9 @@ export default function Home() {
       <section className="relative py-20">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            src="/joinourteam.jpg"
             alt="Team collaboration"
-            className="object-cover w-full h-full"
+            className="object-cover object-top w-full h-full"
             fill
           />
           <div className="absolute inset-0 bg-black bg-opacity-60" />
@@ -227,7 +227,7 @@ export default function Home() {
       </section>
 
       {/* News and Blog Section */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl text-center mb-12">Latest News</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -278,7 +278,7 @@ export default function Home() {
           </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section className="bg-gray-50 py-20 px-4">

@@ -24,7 +24,7 @@ export default function Navigation() {
   }, []);
 
   const productLinks = [
-      { href: '/products/fruits', label: 'Fruits' },
+    { href: '/products/fruits', label: 'Fruits' },
     { href: '/products/frozen-foods', label: 'Frozen Foods' },
     { href: '/products/logistics', label: 'Logistics' },
     { href: '/products/farming', label: 'Farming' },
@@ -33,9 +33,9 @@ export default function Navigation() {
   const links = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
-    // { href: '/careers', label: 'Careers' },
+    { href: '/careers', label: 'Careers' },
     // { href: '/blog', label: 'News and Updates' },
-    // { href: '/contact', label: 'Contact' }
+    { href: '/contact', label: 'Contact Us' }
   ];
 
   return (
@@ -49,13 +49,15 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
-              >
-                {link.label}
-              </Link>
+              link.href !== '/careers' && link.href !== '/contact' ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
+                >
+                  {link.label}
+                </Link>
+              ) : null
             ))}
 
             {/* Products Dropdown */}
@@ -77,28 +79,27 @@ export default function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            <Link
+              href="/careers"
+              className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
+            >
+              Careers
+            </Link>
+
+            {/* Commented out as requested */}
+            {/* <Link
+              href="/blog"
+              className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
+            >
+              News and Updates
+            </Link> */}
 
             <Link
-                key={"/careers"}
-                href={"/careers"}
-                className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
-              >
-                Careers
-              </Link>
-            <Link
-                key={"/blog"}
-                href={"/blog"}
-                className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
-              >
-                News and Updates
-              </Link>
-            <Link
-                key={"/contact"}
-                href={"/contact"}
-                className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
-              >
-                Contact US
-              </Link>
+              href="/contact"
+              className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:text-primary font-space-mono`}
+            >
+              Contact Us
+            </Link>
           </div>
 
           {/* Mobile Navigation Button */}
@@ -125,17 +126,23 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              {/* Mobile Products Menu */}
-              {productLinks.map((product) => (
-                <Link
-                  key={product.href}
-                  href={product.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary font-space-mono"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {product.label}
-                </Link>
-              ))}
+
+              {/* Mobile Products Submenu */}
+              <div className="px-3 py-2 text-base font-medium text-gray-600">
+                <p className="mb-2 font-semibold">Products:</p>
+                <div className="pl-4 space-y-1">
+                  {productLinks.map((product) => (
+                    <Link
+                      key={product.href}
+                      href={product.href}
+                      className="block py-1 text-gray-600 hover:text-primary font-space-mono"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {product.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         )}
