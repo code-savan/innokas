@@ -16,10 +16,19 @@ import React from 'react'
         <div>
           <h4 className="font-bold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-white/80">
+            <li><a href="/" className="text-gray-400 hover:text-white">Home</a></li>
             <li><a href="/about" className="text-gray-400 hover:text-white">About Us</a></li>
-            <li><a href="/products/fruits" className="text-gray-400 hover:text-white">Our Products</a></li>
+            {/* <li><a href="/products/fruits" className="text-gray-400 hover:text-white">Our Products</a></li> */}
             <li><a href="/careers" className="text-gray-400 hover:text-white">Careers</a></li>
-            <li><a href="/blog" className="text-gray-400 hover:text-white">News and Update</a></li>
+            <li>
+              <span className="text-gray-400">Our Products: </span>
+              <span className="text-white/80">
+                <a href="/products/farming" className="hover:text-white">Farming</a>,
+                <a href="/products/frozen-foods" className="hover:text-white"> Frozen Foods</a>,
+                <a href="/products/fruits" className="hover:text-white"> Fruits</a>,
+                <a href="/products/logistics" className="hover:text-white"> Logistics</a>
+              </span>
+            </li>
             <li><a href="/contact" className="text-gray-400 hover:text-white">Contact</a></li>
           </ul>
         </div>
@@ -30,7 +39,7 @@ import React from 'react'
             <li>Phone:  <span>
             <a href="tel:+2348089149601">+2348089149601</a>, <a href="tel:+2348123047312">+2348123047312</a>
             </span></li>
-            <li>Email: examplemail@gmail.com</li>
+            <li>Email:  info@innokas.ng || innokasgifted@gmail.com</li>
           </ul>
         </div>
         <div>

@@ -8,10 +8,10 @@ import Image from 'next/image';
 
 export default function About() {
     const teamMembers = [
-        { name: "John Doe", role: "CEO", image: "/2.jpg" },
-        { name: "Jane Smith", role: "COO", image: "/1.jpg" },
-        { name: "Mike Johnson", role: "Head of Research", image: "/3.jpg" },
-        { name: "Sarah Brown", role: "Marketing Director", image: "/4.jpg" },
+        { name: "Innocent Oliseh", role: "CEO", image: "/2.jpg" },
+        { name: "Aziegbemi Ezekiel", role: "Manager", image: "/1.jpg" },
+        { name: "Charles Augustine Jr ", role: "Company Secretary/ Legal Adviser", image: "/3.jpg" },
+        { name: "Imiere Glyn", role: "Logistics/Inventory", image: "/4.jpg" },
       ]
 
       const features = [
