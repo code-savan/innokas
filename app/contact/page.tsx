@@ -44,7 +44,7 @@ export default function Contact() {
               <Phone className="h-8 w-8 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-bold mb-2">Phone</h3>
               <p className="text-gray-600"><span>
-            <a href="tel:+2348089149601">+2348089149601</a>, <a href="tel:+2348123047312">+2348123047312</a>
+            <a href="tel:+2347044419532">+2347044419532</a>, <a href="tel:+2348036925602">+2348036925602</a>
             </span></p>
             </Card>
             <Card className="p-6 text-center slide-in">
