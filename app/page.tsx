@@ -47,14 +47,14 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen w-full">
-      <Navigation />
+    <main className="min-h-screen w-full flex items-center justify-center">
+      {/* <Navigation /> */}
       {/* <p>Pay Your balance innokas</p> */}
-      {/* <PaymentWarning /> */}
+      <PaymentWarning />
 
 
       {/* Hero Section with Carousel */}
-      <section className="relative h-screen">
+      {/* <section className="relative h-screen">
         <Carousel
           opts={{
             align: "start",
@@ -119,10 +119,10 @@ export default function Home() {
             <CarouselNext className="bg-white/30 hover:bg-white/50 text-white" />
           </div>
         </Carousel>
-      </section>
+      </section> */}
 
       {/* Who We Are Section */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="slide-in">
             <h2 className="text-3xl md:text-4xl mb-6">Who We Are</h2>
@@ -147,10 +147,10 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Product Lines Section */}
-      <section className="bg-gray-50 py-20 px-4">
+      {/* <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl text-center mb-12">Our Product Lines</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -197,10 +197,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Careers Section */}
-      <section className="relative py-20">
+      {/* <section className="relative py-20">
         <div className="absolute inset-0">
           <Image
             src="/joinourteam.jpg"
@@ -224,7 +224,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* News and Blog Section */}
       {/* <section className="py-20 px-4">
@@ -281,7 +281,7 @@ export default function Home() {
       </section> */}
 
       {/* Contact Section */}
-      <section className="bg-gray-50 py-20 px-4">
+      {/* <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="slide-in">
@@ -328,10 +328,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
